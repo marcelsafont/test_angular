@@ -1,0 +1,27 @@
+<?php
+/**
+ * @file
+ * Archivo para empezar a programar con Drupal
+ */
+
+/**
+ * Implementa hook_menu().
+ */
+
+function modulpropi_menu(){
+  $items['propi'] = array(
+    'title' => 'Modul propi',
+    'page callback' => 'modulpropi_missatge',
+     'access callback' => TRUE,
+      );
+
+   return $items;
+}
+
+
+  function modulpropi_missatge( $missatge = 'hello drupal') {
+
+     
+     return 'Hello world!';
+
+  }
