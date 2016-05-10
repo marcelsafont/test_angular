@@ -1,0 +1,10 @@
+name = Content as JSON
+description = Module that returns Drupal content in JSON format through a menu callback
+core = 7.x
+files[] = contentasjson.module
+; Information added by Drupal.org packaging script on 2016-01-29
+version = "7.x-1.3"
+core = "7.x"
+project = "contentasjson"
+datestamp = "1454069341"
+

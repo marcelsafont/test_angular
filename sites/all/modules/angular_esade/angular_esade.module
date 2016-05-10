@@ -1,0 +1,22 @@
+<?php
+
+function angular_esade_preprocess_page(&$variables)	{
+  drupal_add_js(drupal_get_path('module', 'angular_esade') . '/js/angular.min.js');
+  drupal_add_js(drupal_get_path('module', 'angular_esade') . '/js/sanitize.js');
+  drupal_add_js(drupal_get_path('module', 'angular_esade') . '/js/angular-route.js');
+  drupal_add_js(drupal_get_path('module', 'angular_esade') . '/js/app.js');
+}
+
+/*function angular_esade_page_build(&$page) {
+  $page['content']['ngview'] = array(
+      '#markup' => '<div ng-view>www</div>',
+      '#weight' => -20,
+    );
+}*/
+
+function angular_esade_preprocess_html(&$vars) {
+  $vars['attributes_array']['ng-app'] = 'esadeApp';
+}
+
+
+?>

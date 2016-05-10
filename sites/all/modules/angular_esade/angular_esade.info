@@ -1,0 +1,4 @@
+name = Angular esade
+description = "Visualization node details based on angular"
+package = Esade Modules
+core = 7.x
